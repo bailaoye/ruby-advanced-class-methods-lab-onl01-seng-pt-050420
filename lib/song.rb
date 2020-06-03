@@ -4,8 +4,10 @@ class Song
     @name = name
   end
 
+  def self.all
+
   def self.create
-    song = self.new
+    @@all << song
     song
   end
 
